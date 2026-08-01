@@ -1,68 +1,96 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Flashcards de Mitos e Verdades</title> 
-  </head> 
-  <body> 
-    <header> 
-    </header> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards de Curiosidades Animais</title>
  
-    <main> 
-    </main> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
  
-    <footer> 
-    </footer> 
-  </body> 
-</html> 
-<header> 
-  <h1>Confere Aí</h1> 
-  <nav> 
-    <a href="#">Início</a> 
-  </nav> 
-</header> 
-<main> 
-  <h2>Descubra a verdade passando o mouse</h2> 
-  <section> 
-    <article> 
-      <div> 
-        <div> 
-          <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem"> 
-          <p>Pinguins conseguem voar como pássaros!</p> 
-        </div> 
-        <div class="cartao-verso"> 
-          <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem"> 
-          <p>Pinguins não voam, mas são excelentes nadadores.</p> 
-        </div> 
-      </div> 
-    </article> 
-  </section> 
-</main> 
-<footer> 
-  <p>Projeto feito por [Lania]</p> 
-</footer> 
-.cabecalho { 
-  background-color: #7e3e1c; 
-  padding: 15px 25px; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-} body { 
-  display: flex; 
-  flex-direction: column; 
-  min-height: 100vh; 
-  background-color: #f5f2f2; 
-} 
-footer { 
-  background-color: #7e3e1c; 
-  padding: 15px 25px; 
-  color: #fff; 
-} <section class="cartoes"> 
-  <article class="cartao">...</article> 
-  <article class="cartao">...</article> 
-</section> 
-section { 
-  display: flex; 
-  gap: 16px; 
-} 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <span>💡</span> Sabia Disso?
+    </div>
+    <nav>
+      <a href="#" class="cabecalho-link">Início</a>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="hero">
+      <h2>Mitos & Verdades do Reino Animal</h2>
+      <p>Passe o mouse ou toque nos cartões para revelar a resposta!</p>
+    </section>
+
+    <section class="grid-cartoes">
+
+      <article class="cartao">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="tag">PERGUNTA</span>
+            <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=600&q=80" alt="Pinguim" class="cartao-imagem">
+            <div class="cartao-texto">
+              <p>Pinguins só conseguem viver no frio congelante e na neve!</p>
+            </div>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <div class="cartao-conteudo-verso">
+              <span class="badge">MITO! 🐧</span>
+              <p>Diversas espécies de pinguins vivem em locais quentes, como nas praias da África do Sul e nas Ilhas Galápagos!</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="tag">PERGUNTA</span>
+            <img src="https://images.unsplash.com/photo-1545468843-27956a3a7ef3?auto=format&fit=crop&w=600&q=80" alt="Touro" class="cartao-imagem">
+            <div class="cartao-texto">
+              <p>Os touros ficam extremamente irritados ao ver a cor vermelha!</p>
+            </div>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <div class="cartao-conteudo-verso">
+              <span class="badge">MITO! 🐂</span>
+              <p>Touros são daltônicos para o vermelho! O que realmente irrita o animal é o movimento agressivo do pano.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="tag">PERGUNTA</span>
+            <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Morcego" class="cartao-imagem">
+            <div class="cartao-texto">
+              <p>Todos os morcegos são totalmente cegos e usam apenas o som!</p>
+            </div>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <div class="cartao-conteudo-verso">
+              <span class="badge">MITO! 🦇</span>
+              <p>Nenhuma espécie de morcego é cega! Embora usem a ecolocalização, muitos têm uma visão noturna excelente.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido por <strong>Lania Rezende</strong></p>
+  </footer>
+
+</body>
+</html>    
+
